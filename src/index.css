@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .app {
+    @apply bg-gray-700 h-screen flex flex-col justify-center items-center;
+  }
+
+  .mp3-player-container {
+    @apply min-w-[62rem] h-[55rem] flex justify-center  transition-all duration-1000;
+  }
+
+  .playlist {
+    @apply w-[30rem] h-fit bg-green-800 mt-14 p-10 text-center;
+  }
+
+  .playlist-list li {
+    @apply text-[#ccc] text-lg p-1 border-b-2 border-gray-700 py-2;
+  }
+
+  .active {
+    @apply text-white;
+  }
+
+  .mp3-player {
+    @apply ml-5 w-[47%] h-[95%] mt-4 flex flex-col;
+  }
+
+  .art-box {
+    @apply w-full h-[55%] bg-[url("https://www.revolvermag.com/sites/default/files/styles/original_image__844px_x_473px_/public/media/section-media/master_cover.jpg?itok=L1JgJGah&timestamp=1508341064")] bg-white mt-4 bg-cover rounded-t-xl;
+  }
+
+  .controls-box {
+    @apply h-[35%] bg-white flex flex-col justify-around items-center;
+  }
+
+  .controls-box h1 {
+    @apply text-4xl font-bold;
+  }
+
+  .controls-box h2 {
+    @apply text-2xl font-bold text-gray-700 text-center;
+  }
+
+  .control-buttons {
+    @apply h-[50%] flex justify-center gap-10 text-4xl;
+  }
+
+  .control-buttons button {
+    @apply h-16 mt-4;
+  }
+
+  .status-box {
+    @apply w-full h-[10%] bg-gray-100 flex flex-col justify-around items-center ;
+  }
+
+  .progress-bar {
+    @apply w-full h-[0.6rem] bg-gray-300 -m-6;
+  }
+
+  .progress {
+    @apply w-[40%] h-[0.6rem] bg-red-500;
+  }
+}
