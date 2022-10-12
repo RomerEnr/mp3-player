@@ -1,5 +1,5 @@
-import { songs } from "./songs.js";
-import { playSong } from "./playSong.js";
+import { songs } from "../songs.js";
+import { loadSong } from "../player-functions.modules/loadSong.js";
 
 export const loadSongs = () => {
   songs.forEach((song, i) => {
@@ -11,7 +11,7 @@ export const loadSongs = () => {
     clickcableSong.href = "#";
 
     clickcableSong.addEventListener("click", () => {
-      playSong(i);
+      loadSong(i);
     });
 
     songItem.appendChild(clickcableSong);

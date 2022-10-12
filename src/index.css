@@ -20,7 +20,7 @@
   }
 
   .active {
-    @apply text-white;
+    @apply text-white font-bold;
   }
 
   .mp3-player {
