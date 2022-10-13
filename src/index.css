@@ -8,7 +8,7 @@
   }
 
   .mp3-player-container {
-    @apply min-w-[62rem] h-[60rem] flex justify-center  transition-all duration-1000 ;
+    @apply container mx-auto min-w-[61rem] px-4 max-w-[62rem] h-[60rem] flex justify-center  transition-all duration-1000 ;
   }
 
   .playlist {
@@ -24,7 +24,7 @@
   }
 
   .mp3-player {
-    @apply ml-5 w-[50%] h-[95%] mt-4 flex flex-col;
+    @apply ml-5 min-w-[50%] h-[95%] mt-4 flex flex-col;
   }
 
   .art-box {
@@ -69,7 +69,7 @@
   }
 
   .status-box {
-    @apply w-full h-[10%] text-[#ccc] flex flex-col justify-around items-center;
+    @apply max-w-lg py-10 h-[12%] text-[#ccc] flex flex-col justify-around items-center;
   }
 }
 

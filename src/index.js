@@ -7,10 +7,12 @@ import { prevSong } from "./modules/player-functions.modules/prevSong.js";
 import { setCurrentTime } from "./modules/player-functions.modules/setCurrentTime.js";
 import { hidePlaylist } from "./modules/player-functions.modules/hidePlaylist.js";
 import { loadSong } from "./modules/player-functions.modules/loadSong.js";
+import { generateRandomQuote } from "./modules/generateRandomQuote.js";
 
 const main = () => {
   loadSongs();
   loadSong(0);
+  generateRandomQuote();
   playButton.addEventListener("click", () => {
     if (audio.paused) {
       playSong();
