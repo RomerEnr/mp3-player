@@ -4,7 +4,7 @@
 
 @layer components {
   .app {
-    @apply bg-[url("img/background.jpeg")] h-screen flex flex-col justify-center items-center;
+    @apply bg-[url("img/background.jpeg")] bg-cover bg-no-repeat h-screen flex flex-col justify-center items-center;
   }
 
   .mp3-player-container {
