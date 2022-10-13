@@ -8,8 +8,9 @@
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   
-  <script type="module" crossorigin src="/mp3-player/index.0a7708ee.js"></script>
-  <link rel="stylesheet" href="/mp3-player/index.c67769a6.css">
+
+  <script type="module" crossorigin src="/mp3-player/index.3a83225e.js"></script>
+  <link rel="stylesheet" href="/mp3-player/index.ef4367ae.css">
 </head>
 <body>
 
@@ -21,26 +22,34 @@
 
         <div class="art-box">
 
+          <i id="toggle-button" class="fa-solid fa-toggle-off"></i>
+
         </div>
 
         <div class="controls-box">
           <div class="artist-data">
-            <h1 class="song-name">Un verano sin ti</h1>
-            <h2 class="song-author">Bad Bunny</h2>
+            <h1 class="song-name"></h1>
+            <h2 class="song-author"></h2>
           </div>
 
           <div class="control-buttons">
+            <div class="progress-container">
+              <div class="current-time">00:00</div>
+               <input type="range" min="1" max="100" value="0" class="progress-slider">
+               <div class="total-duration">00:00</div>
+           </div>
 
-            <button class="prev">
-              <i class="fas fa-backward" ></i>
-            </button>
-            <button class="play">
-              <i class="fas fa-play"></i>
-            </button>
-            <button class="next">
-              <i class="fas fa-forward"></i>
-            </button>
-  
+           <div class="buttons">
+              <button class="prev">
+                <i id="prev" class="fa-solid fa-backward-step"></i>
+              </button>
+              <button class="play">
+                <i id="play" class="fas fa-play"></i>
+              </button>
+              <button class="next">
+                <i id="next" class="fa-solid fa-forward-step"></i>
+              </button>
+           </div>
 
           </div>
           
@@ -50,15 +59,11 @@
 
           <p class="text-center text-xl">Un corazón helado solo necesita una sonrisa cálida.</p>
 
-          <div class="progress-bar">
-            <div class="progress"></div>
-          </div>
-
         </div>
 
       </div>
 
-      <div class="playlist">
+      <div class="playlist hide">
 
         <ul class="playlist-list">
 
@@ -70,5 +75,6 @@
     </main>
   </div>
 
+  <script src="https://unpkg.com/wavesurfer.js"></script>
 </body>
 </html>
