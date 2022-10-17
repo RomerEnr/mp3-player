@@ -98,6 +98,7 @@
 }
 
 .progress-slider {
+  max-width: 40%;
   height: 5px;
   transition: 0.2s;
   transition: opacity 0.2s;
