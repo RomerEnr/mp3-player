@@ -8,7 +8,7 @@
   }
 
   .mp3-player-container {
-    @apply container mx-auto min-w-[61rem] px-4 max-w-[62rem] h-[60rem] flex justify-center  transition-all duration-1000 ;
+    @apply container mx-auto min-w-[61rem] px-4 max-w-[62rem] h-[60rem] flex justify-center;
   }
 
   .playlist {
@@ -78,6 +78,19 @@
   box-shadow: 0 0 10px 0 rgb(41 41 41);
   backdrop-filter: blur(3.5px);
   z-index: 2;
+  border: 15px solid black;
+  border-color: var(--highlight-color);
+  transition: border-color 2s ease-in;
+}
+
+.mp3-player.on {
+  --highlight-color: red;
+}
+
+@property --highlight-color {
+  syntax: "<color>";
+  initial-value: black;
+  inherits: true;
 }
 
 .status-box {
@@ -100,6 +113,7 @@
 .progress-slider {
   max-width: 40%;
   height: 5px;
+  accent-color: var(--highlight-color, #ccc);
   transition: 0.2s;
   transition: opacity 0.2s;
 }
